@@ -76,7 +76,7 @@ python3 -m pip install requirements.txt
 
 ### 0x05 版本：
 
-version1: 20201207
+**version1**: 20201207
 
-version2: 20210426
-    - 更新微软网址
+**version2**: 20210426
+- 更新微软网址
