@@ -48,6 +48,7 @@
   -U, --update-exp      更新CVEEXP数据
   -C, --check-EXP       检索具有EXP的CVE
   -f FILE, --file FILE  ps1脚本运行后产生的.json文件
+  -m MODE, --mode MODE  更新模式 All:更新所有;Empty:只更新空白的;Error:只更新之前未成功更新的
 ```
 
 ### 0x04 示例：
@@ -69,7 +70,12 @@ python3 -m pip install requirements.txt
 4\. 运行`cve-check.py -u`创建CVEKB数据库
 
 5\. 运行`cve-check.py -U`更新CVEKB数据库中的`hasPOC`字段
-
+```shell
+  此处可以使用-m选择更新模式。
+  -m All:更新所有
+  -m Empty:只更新hasPOC字段为空的
+  -m Error:只更新hasPOC字段为Error的
+```
 6\. 运行`cve-check.py -C -f KB.json`查看具有公开EXP的CVE，如下：
 
 ![1583672504536](README/1583672504536.png)
