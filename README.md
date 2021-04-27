@@ -78,7 +78,7 @@ python3 -m pip install requirements.txt
 ```
 6\. 运行`cve-check.py -C -f KB.json`查看具有公开EXP的CVE，如下：
 
-![1583672504536](README/1583672504536.png)
+![1619484955553.png](README/1619484955553.png)
 
 ### 0x05 版本：
 

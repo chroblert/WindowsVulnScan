@@ -1,11 +1,13 @@
-{"basicInfo":{"windowsProductName":"Microsoft Windows 10 专业版","windowsVersion":"1909"},"KBList":[
-    "KB4534132",
-    "KB4516115",
-    "KB4517245",
-    "KB4521863",
-    "KB4524569",
-    "KB4528759",
-    "KB4537759",
-    "KB4538674",
-    "KB4532693"
+﻿{"basicInfo":{"windowsProductName":"Microsoft Windows 10 企业版 LTSC","windowsVersion":"1809"},"KBList":[
+    "KB4601558",
+    "KB4465065",
+    "KB4470788",
+    "KB4487038",
+    "KB4535680",
+    "KB4577586",
+    "KB4580325",
+    "KB4589208",
+    "KB5000859",
+    "KB5001404",
+    "KB5001342"
 ]}
