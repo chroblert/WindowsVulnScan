@@ -46,9 +46,13 @@
   -h, --help            show this help message and exit
   -u, --update-cve      更新CVEKB数据
   -U, --update-exp      更新CVEEXP数据
+  -m MODE, --mode MODE  搭配-U使用。更新模式 All:更新所有;Empty:只更新空白的;Error:只更新之前未成功更新的
   -C, --check-EXP       检索具有EXP的CVE
+  -n PRODUCTNAME, --productName PRODUCTNAME
+                        搭配-C使用。自定义产品名称，如Windows 10
+  -N PRODUCTVERSION, --productVersion PRODUCTVERSION
+                        搭配-C使用。自定义产品版本，如20H2
   -f FILE, --file FILE  ps1脚本运行后产生的.json文件
-  -m MODE, --mode MODE  更新模式 All:更新所有;Empty:只更新空白的;Error:只更新之前未成功更新的
 ```
 
 ### 0x04 示例：
@@ -80,9 +84,16 @@ python3 -m pip install requirements.txt
 
 ![1619484955553.png](README/1619484955553.png)
 
+7\. 若使用脚本扫描到的系统名称和版本不准确，可以使用`-n,-N`进行指定
+
+![1619494405661.png](README/1619494405661.png)
+
+
 ### 0x05 版本：
 
 **version1**: 20201207
 
-**version2**: 20210426
+**version2**: 20210427
 - 更新微软网址
+- 可以指定数据库更新模式
+- 可以指定系统名称，系统版本
